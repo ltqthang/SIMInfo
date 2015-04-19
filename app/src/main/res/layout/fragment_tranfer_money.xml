@@ -1,0 +1,170 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_transparent"
+    android:orientation="vertical"
+    tools:context="com.alpha.siminfo.TransferMoneyFragment">
+
+        <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/transfer_money"
+                android:background="@color/material_deep_teal_500"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:padding="5dp"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:inputType="number"
+                    android:text="@string/phone_number"
+                    android:layout_width="75dp" />
+
+                <EditText
+                    android:id="@+id/phone_number"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:inputType="number"
+                    android:layout_width="0dp" />
+
+
+                <ImageButton
+                    android:id="@+id/select_contact_button"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/contact"
+                    android:nestedScrollingEnabled="false" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:text="@string/password"
+                    android:layout_width="75dp" />
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:hint="@string/input_password_hint"
+                    android:inputType="numberPassword"
+                    android:layout_width="0dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:text="@string/money"
+                    android:layout_width="75dp" />
+
+                <EditText
+                    android:id="@+id/money"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:hint="@string/input_money_hint"
+                    android:inputType="number"
+                    android:layout_width="0dp" />
+            </LinearLayout>
+
+            <com.alpha.siminfo.view.CircleButton
+                android:id="@+id/OK_button"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="30dp"
+                app:background_color="@color/material_deep_teal_500"
+                app:text="@string/transfer"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/material_deep_teal_500"
+                android:text="@string/register_tranfer_money"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:padding="5dp"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:inputType="number"
+                    android:text="@string/register_password" />
+
+                <EditText
+                    android:id="@+id/password_register"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <com.alpha.siminfo.view.CircleButton
+                android:id="@+id/register_button"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                app:background_color="@color/material_deep_teal_500"
+                app:text="@string/transfer" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

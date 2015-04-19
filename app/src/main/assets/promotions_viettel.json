@@ -1,0 +1,120 @@
+﻿{
+   "promotions" :
+      [
+         {
+            "name" : "CT1",
+            "reg" : "FT7T",
+            "check" : "KT7T",
+            "cancel" : "HUYFT",
+            "des" : "20.100 đồng/lần (trừ tài khoản gốc) được 20.000 đồng gọi ngoại mạng và miễn phí toàn bộ cuộc gọi nội mạng dưới 10 phút sử dụng trong 7 ngày."
+         },
+         {
+            "name" : "CT6",
+            "reg" : "DKG",
+            "check" : "KTG",
+            "cancel" : "HUYVT",
+            "des" : "3000đ để có 100 tin nhắn nội mạng và cuộc gọi nội mạng giảm còn 200 d phút"
+         },
+         {
+            "name" : "CT16",
+            "reg" : "FT5N",
+            "check" : "",
+            "cancel" : "HUYFT",
+            "des" : "5000đ để có 10 phút đầu tiên với giá 0d trên mọi cuộc gọi nội mạng"
+         },
+         {
+            "name" : "CT31",
+            "reg" : "VT100",
+            "check" : "KT",
+            "cancel" : "HUYVT",
+            "des" : "2500đ để có 200 tin nhắn nội mạng và cuộc gọi nội mạng giảm còn 200 d phút."
+         },
+         {
+            "name" : "CT32",
+            "to" : "170",
+            "reg" : "SMS",
+            "check" : "KT100",
+            "cancel" : "HUYSMS",
+            "des" : "2500đ để được 200 tin nhắn nội mạng, sử dụng trong 24h kể từ thời điểm đăng ký."
+         },
+         {
+            "name" : "CT52",
+            "reg" : "G2",
+            "check" : "KTG2",
+            "cancel" : "HUYFT",
+            "des" : "Đối 2.000 d tài khoản gốc được 20.000 d gọi nội mạng trong 24h."
+         },
+         {
+            "name" : "CT53",
+            "reg" : "G3",
+            "check" : "KTG3",
+            "cancel" : "HUYFT",
+            "des" : "Đối 3.000 d tài khoản gốc được 30.000 d gọi nội mạng trong 24h"
+         },
+         {
+            "name" : "CT54",
+            "reg" : "G4",
+            "check" : "KTG4",
+            "cancel" : "HUYFT",
+            "des" : "Đối 4.000 d tài khoản gốc được 40.000 d gọi nội mạng trong 24h"
+         },
+         {
+            "name" : "CT55",
+            "reg" : "G5",
+            "check" : "KTG5",
+            "cancel" : "HUYFT",
+            "des" : "Đối 5.000 d tài khoản gốc được 50.000 d gọi nội mạng trong 24h"
+         },
+         {
+            "name" : "CT56",
+            "reg" : "G6",
+            "check" : "KTG6",
+            "cancel" : "HUYFT",
+            "des" : "Đối 6.000 d tài khoản gốc được 60.000 d gọi nội mạng trong 24h."
+         },
+         {
+            "name" : "CT57",
+            "reg" : "G7",
+            "check" : "KTG7",
+            "cancel" : "HUYFT",
+            "des" : "Đối 7.000 d tài khoản gốc được 70.000 d gọi nội mạng trong 24h"
+         },
+         {
+            "name" : "CT58",
+            "reg" : "G8",
+            "check" : "KTG8",
+            "cancel" : "HUYFT",
+            "des" : "Đối 8.000 d tài khoản gốc được 80.000 d gọi nội mạng trong 24h"
+         },
+         {
+            "name" : "CT59",
+            "reg" : "G9",
+            "check" : "KTG9",
+            "cancel" : "HUYFT",
+            "des" : "Đối 9.000 d tài khoản gốc được 90.000 d gọi nội mạng trong 24h"
+         },
+         {
+            "name" : "CT60",
+            "reg" : "G10",
+            "check" : "KTG10",
+            "cancel" : "HUYFT",
+            "des" : "Đối 10.000 d tài khoản gốc được 50.000 d gọi nội mạng trong 3 ngày. KM áp dụng đến 24h ngày đăng ký."
+         },
+         {
+            "name" : "CT100",
+            "to" : "191",
+            "reg" : "MIMAX",
+            "check" : "KTTK",
+            "cancel" : "HUY",
+            "des" : "50.000đ với sim HSSV, 70.000đ với sim thường. Có 600MB lưu lượng tốc độ cao, hết tốc độ cao còn tốc độ thấp"
+         },
+         {
+            "to": "191",
+            "name" : "CT101",
+            "reg" : "MT5",
+            "check" : "KTTK",
+            "cancel" : "OFF MT5",
+            "des" : "Chỉ với 5000đ/ngày bạn có ngay 1GB dung lượng miễn phí. Khi sử dụng nên kiểm tra dung lượng cẩn thận, kẻo tài khoản không cánh ma bay, không sôi mà bốc hơi"
+         }
+      ]
+}

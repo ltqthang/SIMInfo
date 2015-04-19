@@ -1,0 +1,65 @@
+{
+   "promotions" :
+      [
+         {
+            "name" : "KB",
+            "des" : "02 thuê bao trong nhóm gọi nhau miễn phí 10 phút đầu "
+         },
+         {
+            "name" : "CM100",
+            "des" : "100.000đ/30 ngày: có 700 phút gọi mobi,vina, cố định VNPT toàn quốc "
+         },
+         {
+            "name" : "U5",
+            "des" : "5.000đ/ ngày, miễn phí gọi nội mạng dưới 10 phút"
+         },
+         {
+            "name" : "T10",
+            "des" : "10.000đ/ ngày: Trả trước, Trả sau: 100 phút thoại + 50 SMS nội mạng. Sử dụng trong vòng 24h kể từ khi đăng ký"
+         },
+         {
+            "name" : "Y5",
+            "des" : "5.000đ:  miễn phí 68 phút  nội mạng sử dụng trong vòng 24h kể từ khi đăng ký"
+         },
+         {
+            "name" : "Y10",
+            "des" : "10.000đ:  miễn phí 68 phút  nội mạng, từ phút 69: 500đ/phút : sử dụng trong vòng 24h kể từ khi đăng ký"
+         },
+         {
+            "name" : "T29",
+            "des" : "2.900đ/ngày:  miễn phí 38 phút nội mạng sử dụng trong 24h kể từ khi đăng ký"
+         },
+         {
+            "name" : "T199",
+            "des" : "19.900đ: Miễn phí 280 phút nội mạng sử dụng trong vòng 07 ngày kể từ khi đăng ký"
+         },
+         {
+            "name" : "T699",
+            "des" : "69.900đ: 680 phút nội mạng sử dụng trong vòng 30 ngày kể từ khi đăng ký"
+         },
+         {
+            "name" : "T59",
+            "des" : "59.000đ/ 30 ngày:  1000 phút gọi nội mạng, 30 phút gọi liên mạng và 60 SMS trong nước. Sử dụng trong 30 ngày."
+         },
+         {
+            "name" : "101",
+            "des" : "Gọi 10 phút nội mạng tại các tỉnh thành bên dưới tính tiền 1 phút: Hà Nội, Hòa Bình, Hà Nam, Ninh Bình, Vĩnh Phúc, Phú Thọ, Lào Cai, Yên Bái, Điện Biên, Lai Châu, Sơn La, Thanh Hóa, Nghệ An, Hà Tĩnh"
+         },
+         {
+            "name" : "T30",
+            "des" : "30,000đ/tháng: Miễn phí 380 phút nội mạng, 38 sms, 150MB Data: Đồng Nai, Bình Dương, Lâm Đồng, Bình Phước, Bình Thuận, Ninh Thuận, Long An, Tây Ninh và Bà Rịa – Vũng Tàu."
+         },
+         {
+            "name" : "CBHT",
+            "des" : "Cán bộ hưu trí hòa mạng nhận lương qua VNPOST sẽ miễn phí 6 tháng đầu: 1000 phút nội mạng + 3000 tin nhắn). Từ tháng 07: 20.000đ/tháng"
+         },
+         {
+            "name" : "D5",
+            "des" : "5000đ: 1GB data tốc độ cao trong 24h"
+         },
+         {
+             "name" : "MIU",
+             "des" : "50.000đ: 600MB lưu lượng data tốc độ tối đa, sử dụng trong tháng"
+          }
+      ]
+}

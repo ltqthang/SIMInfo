@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name" translatable="false">Dịch vụ SIM</string>
+    <string name="service_provider">Nhà mạng</string>
+    <string name="viettel_greeting">Hãy nói theo cách của bạn, tính tiền theo cách của chúng tôi!</string>
+    <string name="mobifone_greeting">Mọi lúc, mọi nơi, tính tiền mọi chỗ!</string>
+    <string name="vinaphone_greeting">Không ngừng vươn xa, tạm ngừng khuyến mãi!</string>
+    <string name="vietnamobile_greeting">Mạng di động mới, cách tính tiền mới</string>
+    <string name="default_greeting">SIM lạ, chưa thể xác định</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="balance">Tài khoản</string>
+    <string name="p_balance">Khuyến mãi</string>
+    <string name="cash_advance">Ứng tiền 3K</string>
+    <string name="send_money">Chuyển tiền</string>
+    <string name="request_recall">Yêu cầu gọi lại</string>
+    <string name="ca10k">Ứng tiền 10k-50k</string>
+    <string name="phone_number">SĐT nhận</string>
+    <string name="password">Mật khẩu</string>
+    <string name="money">Số tiền</string>
+    <string name="transfer">OK</string>
+    <string name="your_name">Tên của bạn</string>
+    <string name="success">Thành công!</string>
+    <string name="invalid_phone_number">Số điện thoại không hợp lệ</string>
+    <string name="invalid_name">Tên không được chứa khoảng trắng</string>
+    <string name="input_password_hint"></string>
+    <string name="input_phone_number_hint">Số điện thoại người nhận</string>
+    <string name="input_money_hint">bội của 1000</string>
+    <string name="invalid_password">Mật khẩu không được rỗng</string>
+    <string name="invalid_amount">Số tiền phải là bội của 1000</string>
+    <string name="not_supported">Chưa hỗ trợ SIM của bạn</string>
+    <string name="register">Đăng ký</string>
+    <string name="register_service">Đăng ký</string>
+    <string name="cancel_service">Hủy</string>
+    <string name="fast_credit">Ứng tiền</string>
+    <string name="fast_credit_10k">10,000Đ</string>
+    <string name="general">Chung</string>
+    <string name="student">SIM sinh viên</string>
+    <string name="student_vt100">Sinh viên</string>
+    <string name="viettel_vt100">100đ/phút gọi nội mạng\nMiễn phí 100 tin nhắn nội mạng\nCước phí: 2.500đ</string>
+    <string name="viettel_dkg">200đ/phút gọi nội mạng\nMiễn phí 100SMS nội mạng\n Cước phí: 3000đ</string>
+    <string name="tomato_dkg">Tomato</string>
+    <string name="service_3g">Các gói 3G</string>
+    <string name="mimax_description">MIMAX - Miễn phí 3G trong tháng. \nHưởng tốc độ tối đa trong 600MB
+        đầu tiên\nCước phí: 50.000 - 70.000</string>
+    <string name="mt5_description">MT5\nMiễn phí 1GB dung lượng trong 24h\n Cước phí: 5000đ</string>
+    <string name="promotion_description">Description</string>
+    <string name="viettel">VIETTEL</string>
+    <string name="preference_file_name">com.alpha.simpromotion</string>
+    <string name="promotion_name">Promotion Name</string>
+    <string name="registered_toast">Đã đăng ký, vui lòng đợi tin nhắn xác nhận</string>
+    <string name="checked_toast">Đã kiểm tra, vui lòng đợi tin nhắn xác nhận</string>
+    <string name="cancel_toast">Đã hủy gia hạn, vui lòng đợi tin nhắn xác nhận</string>
+    <string name="mobifone">MOBIFONE</string>
+    <string name="cash_advance_auto">Ứng tiền tự động</string>
+    <string name="send_success">Gửi yêu cầu thành công, vui lòng đợi phản hồi</string>
+    <string name="register_password">Mật khẩu</string>
+    <string name="register_tranfer_money">Đăng ký dịch vụ</string>
+    <string name="transfer_money">Chuyển tiền</string>
+    <string name="click_to_button">Nhấn vào nút phía trên để tự động gửi tin nhắn kiểm tra các khuyến mãi được hưởng. Phí: Viettel: 100đ, Mobifone: 200đ </string>
+    <string name="click_to_button_mobifone">Nhấn vào nút phía trên để kiểm tra các khuyến mãi được hưởng. Phí: 200đ/lần</string>
+    <string name="preference_file_name_viettel">viettel_preferences</string>
+    <string name="preference_file_name_mobifone">mobifone_preferences</string>
+    <string name="ca3k">Ứng ngay 3000đ</string>
+    <string name="ca_description">Nhấn đăng ký để đăng ký dịch vụ ứng tiền tự động (từ 5000đ - 50.000đ) tùy theo tình trạng SIM hoặc ứng ngay 3000đ mà không phải đăng ký</string>
+    <string name="confirm_register">Xác nhận đăng ký</string>
+    <string name="confirm_message">Bạn có chắc muốn đăng ký gói dịch vụ này?</string>
+
+</resources>

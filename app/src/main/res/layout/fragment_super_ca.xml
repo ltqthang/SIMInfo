@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.alpha.siminfo.mobifone.SuperCAFragment">
+
+    <com.alpha.siminfo.view.CircleButton
+        android:id="@+id/fast_credit_button"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        app:background_color="@color/green_dark"
+        app:text="@string/fast_credit"
+        android:layout_weight="1" />
+
+    <com.alpha.siminfo.view.CircleButton
+        android:id="@+id/register_button"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        app:background_color="@color/orange_light"
+        app:text="@string/register_service"
+        android:layout_weight="1" />
+
+    <com.alpha.siminfo.view.CircleButton
+        android:id="@+id/cancel_button"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        app:background_color="@color/red"
+        app:text="@string/cancel_service"
+        android:layout_weight="1" />
+
+</LinearLayout>

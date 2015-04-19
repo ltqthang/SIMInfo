@@ -1,0 +1,99 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <LinearLayout
+        android:id="@+id/container"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/material_deep_teal_500"
+                    android:gravity="center"
+                    android:text="@string/viettel"
+                    android:textColor="@android:color/white"
+                    android:textSize="25dp"
+                    android:layout_marginBottom="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_span="3"
+                    android:gravity="center_horizontal"
+                    android:text="@string/viettel_greeting"
+                    android:textColor="@color/material_deep_teal_500"
+                    android:textSize="18sp"
+                    android:padding="5dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp">
+
+                    <com.alpha.siminfo.view.CircleButton
+                        android:id="@+id/balance_button"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="false"
+                        android:cropToPadding="false"
+                        app:background_color="@color/material_deep_teal_500"
+                        app:text="@string/balance" />
+
+                    <com.alpha.siminfo.view.CircleButton
+                        android:id="@+id/transfer_money_button"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_weight="1"
+                        app:background_color="@color/green_dark"
+                        app:text="@string/send_money" />
+
+                    <com.alpha.siminfo.view.CircleButton
+                        android:id="@+id/ca10k_button"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_weight="1"
+                        app:background_color="@color/deep"
+                        app:text="@string/ca10k" />
+
+                    <com.alpha.siminfo.view.CircleButton
+                        android:id="@+id/request_recall_button"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_weight="1"
+                        app:background_color="@color/orange_light"
+                        app:text="@string/request_recall" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
