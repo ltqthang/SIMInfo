@@ -15,7 +15,6 @@ import com.alpha.siminfo.view.CircleButton;
 
 public class MainActivity extends ActionBarActivity {
     public static String networkOperator;
-    private final String TAG = "MainActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
