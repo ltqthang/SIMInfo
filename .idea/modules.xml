@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SIMInfo.iml" filepath="$PROJECT_DIR$/SIMInfo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SIMInfoClone.iml" filepath="$PROJECT_DIR$/SIMInfoClone.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/circlebutton/circlebutton.iml" filepath="$PROJECT_DIR$/circlebutton/circlebutton.iml" />
     </modules>

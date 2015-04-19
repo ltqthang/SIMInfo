@@ -32,7 +32,7 @@ public class SMSReceive extends BroadcastReceiver {
         if (bundle != null) {
             Object[] smsExtra = (Object[]) bundle.get(SMS_EXTRA_NAME);
             sharedPreferences =
-                    context.getSharedPreferences(MainActivity.networkOperatorName, Context.MODE_PRIVATE);
+                    context.getSharedPreferences(MainActivity.networkOperator, Context.MODE_PRIVATE);
             editor = sharedPreferences.edit();
             editor.putBoolean("promotionReceived", true);
 

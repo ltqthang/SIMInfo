@@ -1,6 +1,7 @@
 package com.alpha.siminfo;
 
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
@@ -16,7 +17,6 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
-import com.alpha.siminfo.R;
 
 import com.alpha.siminfo.util.Util;
 import com.alpha.siminfo.view.CircleButton;
@@ -70,7 +70,7 @@ public class TransferMoneyFragment extends Fragment {
                     Toast.makeText(getActivity(), "Mật khẩu không được trống", Toast.LENGTH_SHORT).show();
                     return;
                 }
-                switch (MainActivity.networkOperatorName) {
+                switch (MainActivity.networkOperator) {
                     case "VIETTEL": {
                         SmsManager smsManager = SmsManager.getDefault();
                         smsManager.sendTextMessage("136", null, psswd, null, null);
@@ -117,7 +117,7 @@ public class TransferMoneyFragment extends Fragment {
                 if (!isValid(number, psswd, amount)) return;
                 Toast.makeText(getActivity(), number + " " + psswd + " " + amount, Toast.LENGTH_SHORT).show();
 
-                switch (MainActivity.networkOperatorName) {
+                switch (MainActivity.networkOperator) {
                     case "VIETTEL" : {
                         Util.sendUSSD(getActivity(), "136*" + psswd + "*" + number + "*" + amount);
                         break;
@@ -168,7 +168,7 @@ public class TransferMoneyFragment extends Fragment {
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == PICK_CONTACT_REQUEST) {
-            if (resultCode == getActivity().RESULT_OK) {
+            if (resultCode == Activity.RESULT_OK) {
                 Uri uri = data.getData();
 
                 String[] projection = {ContactsContract.CommonDataKinds.Phone.NUMBER};

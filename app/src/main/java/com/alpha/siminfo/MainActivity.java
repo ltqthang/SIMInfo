@@ -14,7 +14,7 @@ import com.alpha.siminfo.viettel.ViettelFragment;
 import com.alpha.siminfo.view.CircleButton;
 
 public class MainActivity extends ActionBarActivity {
-    public static String networkOperatorName;
+    public static String networkOperator;
     private final String TAG = "MainActivity";
 
     @Override
@@ -24,11 +24,11 @@ public class MainActivity extends ActionBarActivity {
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(0xff009688));
 
         TelephonyManager manager = (TelephonyManager) getSystemService(TELEPHONY_SERVICE);
-        networkOperatorName = manager.getNetworkOperatorName();
+        networkOperator = manager.getNetworkOperatorName();
 
         FragmentManager fragmentManager = getSupportFragmentManager();
 
-        switch (networkOperatorName) {
+        switch (networkOperator) {
             case "VIETTEL" : {
                 fragmentManager.beginTransaction().add(R.id.fragmentContainer, new ViettelFragment()).commit();
                 break;
