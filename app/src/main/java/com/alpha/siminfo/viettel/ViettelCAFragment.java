@@ -36,7 +36,8 @@ public class ViettelCAFragment extends Fragment {
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                smsManager.sendTextMessage("9118", null, "DK", null, null);
+                //smsManager.sendTextMessage("9118", null, "DK", null, null);
+                Util.sendMessager(getActivity(), "9118", "DK");
             }
         });
 
@@ -44,7 +45,8 @@ public class ViettelCAFragment extends Fragment {
         cancelButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                smsManager.sendTextMessage("9118", null, "HUY", null, null);
+                //smsManager.sendTextMessage("9118", null, "HUY", null, null);
+                Util.sendMessager(getActivity(), "9118", "DK");
             }
         });
 

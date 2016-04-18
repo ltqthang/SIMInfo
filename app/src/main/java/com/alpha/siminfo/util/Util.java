@@ -23,6 +23,13 @@ public class Util {
         context.startActivity(intent);
     }
 
+    public static void sendMessager(Context context, String telephoneNumber, String stringText){
+        Intent sendIntent = new Intent(Intent.ACTION_VIEW);
+        sendIntent.setData(Uri.parse("sms:" + telephoneNumber));
+        sendIntent.putExtra("sms_body", stringText);
+        context.startActivity(sendIntent);
+    }
+
     public static boolean isValidPhoneNumber(String phoneNumber) {
         return (phoneNumber.length() == 10 || phoneNumber.length() == 11);
     }

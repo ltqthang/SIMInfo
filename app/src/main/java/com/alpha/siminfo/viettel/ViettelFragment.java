@@ -28,6 +28,7 @@ import com.alpha.siminfo.provider.ViettelPromotionProvider;
 import com.alpha.siminfo.util.Util;
 import com.alpha.siminfo.view.CircleButton;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -96,7 +97,8 @@ public class ViettelFragment extends Fragment {
                 public void onClick(View v) {
                     refreshButton.setClickable(false);
                     refreshButton.setImageDrawable(getResources().getDrawable(R.drawable.refresh));
-                    smsManager.sendTextMessage("266", null, "KM", null, null);
+                    //smsManager.sendTextMessage("266", null, "KM", null, null);
+                    Util.sendMessager(getActivity(), "266", "KM");
                     Toast.makeText(getActivity(), getString(R.string.send_success), Toast.LENGTH_SHORT).show();
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
                         objectAnimator = ObjectAnimator.ofFloat(refreshButton, "rotation", 0, 360);
@@ -216,7 +218,8 @@ public class ViettelFragment extends Fragment {
                        .setPositiveButton("Có", new DialogInterface.OnClickListener() {
                            @Override
                            public void onClick(DialogInterface dialog, int which) {
-                               smsManager.sendTextMessage(promotion.getDesNumber(), null, promotion.getMessageRegister(), null, null);
+                               //smsManager.sendTextMessage(promotion.getDesNumber(), null, promotion.getMessageRegister(), null, null);
+                               Util.sendMessager(getActivity(), promotion.getDesNumber(), promotion.getMessageRegister());
                                Toast.makeText(getActivity(), getString(R.string.registered_toast), Toast.LENGTH_LONG).show();
                            }
                        })
@@ -234,7 +237,8 @@ public class ViettelFragment extends Fragment {
         checkButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                smsManager.sendTextMessage(promotion.getDesNumber(), null, promotion.getMessageCheck(), null, null);
+                //smsManager.sendTextMessage(promotion.getDesNumber(), null, promotion.getMessageCheck(), null, null);
+                Util.sendMessager(getActivity(), promotion.getDesNumber(), promotion.getMessageCheck());
                 Toast.makeText(getActivity(), getString(R.string.checked_toast), Toast.LENGTH_LONG).show();
             }
         });
@@ -242,7 +246,8 @@ public class ViettelFragment extends Fragment {
         cancelButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                smsManager.sendTextMessage(promotion.getDesNumber(), null, promotion.getMessageCancel(), null, null);
+                //smsManager.sendTextMessage(promotion.getDesNumber(), null, promotion.getMessageCancel(), null, null);
+                Util.sendMessager(getActivity(), promotion.getDesNumber(), promotion.getMessageCancel());
                 Toast.makeText(getActivity(), getString(R.string.cancel_toast), Toast.LENGTH_LONG).show();
             }
         });

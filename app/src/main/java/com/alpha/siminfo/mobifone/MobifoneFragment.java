@@ -89,7 +89,8 @@ public class MobifoneFragment extends Fragment {
                 public void onClick(View v) {
                     refreshButton.setClickable(false);
                     refreshButton.setImageDrawable(getResources().getDrawable(R.drawable.refresh));
-                    smsManager.sendTextMessage("999", null, "KT DSKM", null, null);
+                    //smsManager.sendTextMessage("999", null, "KT DSKM", null, null);
+                    Util.sendMessager(getActivity(), "999", "KT DSKM");
                     Toast.makeText(getActivity(), getString(R.string.send_success), Toast.LENGTH_SHORT).show();
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
                         objectAnimator = ObjectAnimator.ofFloat(refreshButton, "rotation", 0, 360);
@@ -136,8 +137,9 @@ public class MobifoneFragment extends Fragment {
         cashAdvanceButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                SmsManager smsManager = SmsManager.getDefault();
-                smsManager.sendTextMessage("900", null, "UT", null, null);
+                //SmsManager smsManager = SmsManager.getDefault();
+                //smsManager.sendTextMessage("900", null, "UT", null, null);
+                Util.sendMessager(getActivity(), "900", "UT");
             }
         });
 
@@ -197,7 +199,8 @@ public class MobifoneFragment extends Fragment {
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                smsManager.sendTextMessage(promotion.getDesNumber(), null, promotion.getMessageRegister(), null, null);
+                //smsManager.sendTextMessage(promotion.getDesNumber(), null, promotion.getMessageRegister(), null, null);
+                Util.sendMessager(getActivity(), promotion.getDesNumber(), promotion.getMessageRegister());
                 Toast.makeText(getActivity(), getString(R.string.registered_toast), Toast.LENGTH_LONG).show();
             }
         });
@@ -205,7 +208,8 @@ public class MobifoneFragment extends Fragment {
         cancelButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                smsManager.sendTextMessage(promotion.getDesNumber(), null, promotion.getMessageCancel(), null, null);
+                //smsManager.sendTextMessage(promotion.getDesNumber(), null, promotion.getMessageCancel(), null, null);
+                Util.sendMessager(getActivity(), promotion.getDesNumber(), promotion.getMessageCancel());
                 Toast.makeText(getActivity(), getString(R.string.cancel_toast), Toast.LENGTH_LONG).show();
             }
         });
