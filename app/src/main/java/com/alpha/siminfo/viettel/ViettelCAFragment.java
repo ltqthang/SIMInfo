@@ -56,7 +56,28 @@ public class ViettelCAFragment extends Fragment {
             }
         });
 
+        int[] ids = {R.id.view1, R.id.view2, R.id.view3, R.id.view4, R.id.view5, R.id.view6};
+        for (int i = 0; i < 6; i++) {
+            final CircleButton button = (CircleButton) viewRoot.findViewById(ids[i]);
+            button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    smsManager.sendTextMessage("9118", null, "UT " + formatString(button.getText()), null, null);
+                }
+            });
+        }
+
         return viewRoot;
+    }
+
+    private String formatString(String string) {
+        StringBuilder sb = new StringBuilder();
+        final int len = string.length();
+        for (int i = 0; i < len; i++) {
+            if (string.charAt(i) == ',') break;
+            sb.append(string.charAt(i));
+        }
+        return new String(sb);
     }
 
 

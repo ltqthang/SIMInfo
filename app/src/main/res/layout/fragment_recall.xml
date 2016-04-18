@@ -14,7 +14,6 @@
     <TextView
         android:layout_height="wrap_content"
         android:text="@string/phone_number"
-        android:inputType="number"
         android:gravity="bottom"
         android:layout_width="wrap_content"
         android:layout_gravity="bottom"
@@ -25,9 +24,6 @@
     <EditText
         android:id="@+id/phone_number"
         android:layout_height="wrap_content"
-        android:layout_column="1"
-        android:layout_weight="1"
-        android:inputType="number"
         android:focusable="true"
         android:focusableInTouchMode="true"
         android:layout_width="match_parent"
@@ -39,7 +35,6 @@
         android:layout_width="40dp"
         android:layout_height="match_parent"
         android:background="@drawable/contact"
-        android:nestedScrollingEnabled="false"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
@@ -68,7 +63,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
+        android:inputType="textCapWords"
         android:ems="10"
         android:id="@+id/sender_name"
         android:layout_below="@+id/phone_number"

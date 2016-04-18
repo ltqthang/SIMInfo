@@ -59,10 +59,9 @@
     <string name="transfer_money">Chuyển tiền</string>
     <string name="click_to_button">Nhấn vào nút phía trên để tự động gửi tin nhắn kiểm tra các khuyến mãi được hưởng. Phí: Viettel: 100đ, Mobifone: 200đ </string>
     <string name="click_to_button_mobifone">Nhấn vào nút phía trên để kiểm tra các khuyến mãi được hưởng. Phí: 200đ/lần</string>
-    <string name="preference_file_name_viettel">viettel_preferences</string>
     <string name="preference_file_name_mobifone">mobifone_preferences</string>
-    <string name="ca3k">Ứng ngay 3000đ</string>
-    <string name="ca_description">Nhấn đăng ký để đăng ký dịch vụ ứng tiền tự động (từ 5000đ - 50.000đ) tùy theo tình trạng SIM hoặc ứng ngay 3000đ mà không phải đăng ký</string>
+    <string name="ca3k">3,000</string>
+    <string name="ca_description">- Nhấn đăng ký để đăng ký dịch vụ ứng tiền tự động (từ 5000đ - 50.000đ) tùy theo tình trạng SIM\n-  Ứng ngay bằng cách chọn số tiền mà không phải đăng ký</string>
     <string name="confirm_register">Xác nhận đăng ký</string>
     <string name="confirm_message">Bạn có chắc muốn đăng ký gói dịch vụ này?</string>
 

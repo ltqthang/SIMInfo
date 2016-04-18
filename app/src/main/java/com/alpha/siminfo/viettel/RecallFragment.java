@@ -1,10 +1,13 @@
 package com.alpha.siminfo.viettel;
 
 
+import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.provider.ContactsContract;
 import android.support.v4.app.Fragment;
 import android.telephony.SmsManager;
@@ -14,6 +17,7 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
+
 import com.alpha.siminfo.R;
 import com.alpha.siminfo.util.Util;
 import com.alpha.siminfo.view.CircleButton;
@@ -28,11 +32,17 @@ public class RecallFragment extends Fragment {
     private EditText senderName;
     private ImageButton selectContactButton;
     private CircleButton OKButton;
+    private SharedPreferences sharedPreferences;
 
     public RecallFragment() {
         // Required empty public constructor
     }
 
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, final ViewGroup container,
@@ -61,12 +71,30 @@ public class RecallFragment extends Fragment {
                 String name = senderName.getText().toString();
                 if (!checkValid(number, name)) return;
 
+                SharedPreferences.Editor editor = sharedPreferences.edit();
+                editor.putString("phone", number);
+                editor.putString("name", name);
+                editor.apply();
                 smsManager.sendTextMessage("9119", null, number + " " + name, null, null);
                 Toast.makeText(getActivity(), getString(R.string.success), Toast.LENGTH_SHORT).show();
             }
         });
 
         return viewRoot;
+    }
+
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        String lastUsedNumber = sharedPreferences.getString("phone", "");
+        if (!lastUsedNumber.equals("")) {
+            phoneNumber.setText(lastUsedNumber);
+        }
+        String lastUsedName = sharedPreferences.getString("name", "");
+        if (!lastUsedName.equals("")) {
+            senderName.setText(lastUsedName);
+        }
     }
 
     private boolean checkValid(String number, String name) {
@@ -100,7 +128,7 @@ public class RecallFragment extends Fragment {
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == PICK_CONTACT_REQUEST_CODE) {
-            if (resultCode == getActivity().RESULT_OK) {
+            if (resultCode == Activity.RESULT_OK) {
                 Uri uri = data.getData();
 
                 String[] projection = {ContactsContract.CommonDataKinds.Phone.NUMBER};
@@ -113,6 +141,8 @@ public class RecallFragment extends Fragment {
                 number = number.replaceAll("\\+", "");
                 number = number.replaceAll("84", "0");
                 phoneNumber.setText(number);
+
+                cursor.close();
             }
         }
     }

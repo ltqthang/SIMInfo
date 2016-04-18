@@ -3,50 +3,110 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.alpha.siminfo.viettel.ViettelCAFragment">
+    tools:context="com.alpha.siminfo.viettel.ViettelCAFragment"
+    android:padding="16dp">
 
 
     <com.alpha.siminfo.view.CircleButton
         android:id="@+id/register_button"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         app:background_color="@color/orange_light"
         app:text="@string/register_service"
         android:layout_gravity="center_vertical"
-        android:layout_alignTop="@+id/ca3k_button"
+        android:layout_below="@+id/textView3"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="30dp" />
 
     <com.alpha.siminfo.view.CircleButton
         android:id="@+id/ca3k_button"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         app:background_color="@color/green_dark"
         app:text="@string/ca3k"
         android:layout_gravity="center_vertical"
-        android:layout_alignTop="@+id/cancel_button"
-        android:layout_toLeftOf="@+id/cancel_button"
-        android:layout_toStartOf="@+id/cancel_button" />
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp" />
 
     <com.alpha.siminfo.view.CircleButton
         android:id="@+id/cancel_button"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         app:background_color="@color/red"
         app:text="@string/cancel_service"
         android:layout_gravity="center_vertical"
-        android:layout_centerVertical="true"
+        android:layout_alignTop="@+id/ca3k_button"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="30dp" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/ca_description"
         android:id="@+id/textView3"
         android:padding="10dp"
-        android:layout_above="@+id/register_button"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <com.alpha.siminfo.view.CircleButton
+        android:id="@+id/view1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:text="5,000"
+        app:background_color="@color/red_light"
+        android:layout_below="@+id/register_button"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+    <com.alpha.siminfo.view.CircleButton
+        android:id="@+id/view2"
+        app:background_color="@color/red_light"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:text="10,000"
+        android:layout_below="@+id/ca3k_button"
+        android:layout_alignLeft="@+id/ca3k_button"
+        android:layout_alignStart="@+id/ca3k_button" />
+
+    <com.alpha.siminfo.view.CircleButton
+        android:id="@+id/view3"
+        app:background_color="@color/red_light"
+        app:text="20,000"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/cancel_button"
+        android:layout_alignLeft="@+id/cancel_button"
+        android:layout_alignStart="@+id/cancel_button" />
+    <com.alpha.siminfo.view.CircleButton
+        android:id="@+id/view4"
+        app:background_color="@color/red_light"
+        app:text="30,000"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/view1"
+        android:layout_alignLeft="@+id/view1"
+        android:layout_alignStart="@+id/view1" />
+    <com.alpha.siminfo.view.CircleButton
+        android:id="@+id/view5"
+        app:background_color="@color/red_light"
+        app:text="40,000"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/view2"
+        android:layout_alignLeft="@+id/view2"
+        android:layout_alignStart="@+id/view2" />
+    <com.alpha.siminfo.view.CircleButton
+        android:id="@+id/view6"
+        app:background_color="@color/red_light"
+        app:text="50,000"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/view3"
+        android:layout_alignLeft="@+id/view3"
+        android:layout_alignStart="@+id/view3" />
 
 </RelativeLayout>
