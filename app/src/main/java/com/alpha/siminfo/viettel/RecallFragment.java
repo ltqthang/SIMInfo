@@ -61,7 +61,8 @@ public class RecallFragment extends Fragment {
                 String name = senderName.getText().toString();
                 if (!checkValid(number, name)) return;
 
-                smsManager.sendTextMessage("9119", null, number + " " + name, null, null);
+                //smsManager.sendTextMessage("9119", null, number + " " + name, null, null);
+                Util.sendMessager(getActivity(), "9119", number + " " + name);
                 Toast.makeText(getActivity(), getString(R.string.success), Toast.LENGTH_SHORT).show();
             }
         });
